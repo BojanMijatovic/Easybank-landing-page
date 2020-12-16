@@ -1,12 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: 'Public Sans', sans-serif; }
 
-html {
-  background-color: red; }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  z-index: 1;
+  position: relative;
+  background-color: white; }
+  header .logo img {
+    cursor: pointer; }
+  header .mobile-nav {
+    display: none; }
+  header .mobile img {
+    cursor: pointer; }
+  header .nav {
+    display: none; }
+
+#home .img .__img-background {
+  width: 100%; }
+#home .img .mobile {
+  position: fixed;
+  top: -14rem;
+  left: 0;
+  width: 100%; }
+#home .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center; }
+  #home .text .title {
+    font-size: 2.8rem;
+    color: #2d314d;
+    font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */
