@@ -58,4 +58,52 @@ header {
       border: none;
       border-radius: 2rem; }
 
+#about {
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #about .text {
+    text-align: center;
+    margin-bottom: 2rem; }
+    #about .text .title {
+      font-size: 2.4rem;
+      color: #2d314d;
+      font-weight: 700;
+      padding: 3rem 6.5rem 2.5rem 6.5rem; }
+    #about .text .info {
+      font-size: 1.4rem;
+      color: #9698a6;
+      padding: 1.5rem;
+      line-height: 1.4; }
+  #about .list__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none; }
+    #about .list__items .item {
+      text-align: center; }
+      #about .list__items .item .img {
+        margin: 1rem; }
+      #about .list__items .item .title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #2d314d;
+        margin: 2rem 1rem 1rem; }
+      #about .list__items .item .info {
+        font-size: 1.4rem;
+        color: #9698a6;
+        padding: 2rem 2.5rem 1.5rem 2.5rem;
+        line-height: 1.4; }
+
+#article .title {
+  font-size: 2.4rem;
+  color: #2d314d;
+  font-weight: 700;
+  padding: 3rem 6.5rem 2.5rem 6.5rem;
+  text-align: center;
+  margin-top: 2rem; }
+
 /*# sourceMappingURL=main.css.map */
