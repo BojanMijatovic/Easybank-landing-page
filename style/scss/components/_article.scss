@@ -1,4 +1,5 @@
 #article {
+  //  title section
   .title {
     font-size: 2.4rem;
     color: $dark-blue;
@@ -6,5 +7,41 @@
     padding: 3rem 6.5rem 2.5rem 6.5rem;
     text-align: center;
     margin-top: 2rem;
+  }
+
+  // articles
+  .articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;
+  }
+  //item
+  .__item {
+    .img {
+      width: 80%;
+    }
+    .text {
+      margin: 1.5rem 4rem 3rem 4rem;
+      text-align: left;
+
+      .author {
+        font-size: 1.2rem;
+        color: $grayish-blue;
+        margin-bottom: 2rem;
+      }
+      .subtitle {
+        color: $dark-blue;
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+      }
+      .info {
+        color: $grayish-blue;
+        font-size: 1.3rem;
+        margin: 1.5rem 0;
+      }
+    }
   }
 }
