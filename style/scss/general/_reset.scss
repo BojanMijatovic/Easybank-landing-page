@@ -6,12 +6,19 @@
 
 html {
   font-size: 62.5%;
-   font-family: 'Public Sans', sans-serif;
+  font-family: 'Public Sans', sans-serif;
+  height: 100vh;
 }
 
 //  media
 @mixin media-lg {
-  @media screen and(min-width: 1044px) {
+  @media screen and(min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and(min-width: 768px) {
     @content;
   }
 }

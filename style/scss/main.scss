@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 @import './general/reset';
-@import './general/responsive';
 @import './general/variables';
 
 //  components
@@ -9,3 +8,4 @@
 @import './components/about';
 @import './components/article';
 @import './components/footer';
+@import './general/responsive';
