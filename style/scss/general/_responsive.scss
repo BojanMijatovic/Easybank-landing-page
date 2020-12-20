@@ -1,139 +1,3 @@
-// lg responsive
-@include media-lg {
-  // header section
-  header {
-    justify-content: space-between;
-    .mobile {
-      display: none;
-    }
-    //nav
-    .nav {
-      display: block;
-      font-size: 1.4rem;
-
-      // items
-      .__items {
-        display: flex;
-        justify-content: space-between;
-        margin-right: 5rem;
-        list-style: none;
-        // item
-        .__item {
-          margin: 0 2rem;
-          padding: 0.5rem 1rem;
-          a {
-            text-decoration: none;
-            color: $grayish-blue;
-            &:hover,
-            &:active {
-              color: $dark-blue;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  //  home section
-  #home {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 0;
-    .img {
-      background-image: url('../../images/bg-intro-desktop.svg');
-      overflow: hidden;
-      .mobile {
-        width: 90%;
-        margin-left: 12rem;
-      }
-    }
-    // text
-    .text {
-      align-items: flex-start;
-      .title {
-        font-size: 6rem;
-      }
-      .info {
-        font-size: 1.8rem;
-        padding-left: 5rem;
-      }
-      // btn
-      .btn {
-        margin-left: 5rem;
-      }
-    }
-  }
-
-  //  about section
-  #about {
-    flex-direction: column;
-    align-items: flex-start;
-    // text
-    .text {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      .title {
-        font-size: 2.8rem;
-      }
-      .info {
-        margin-left: 5rem;
-        font-size: 1.8rem;
-        margin-right: 30rem;
-      }
-    }
-    // list items
-    .list__items {
-      flex-direction: row;
-    }
-  }
-
-  // article section
-  #article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-    // articles list
-    .articles {
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: space-between;
-      margin-bottom: 3rem;
-      // single item
-      .__item {
-        .img {
-          height: 15vh;
-        }
-      }
-    }
-  }
-
-  // footer
-  .footer {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1rem 0;
-    .links {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-      margin-top: 1.5rem;
-      font-size: 1rem;
-      .link {
-        margin: 0.8rem;
-      }
-    }
-    .btn {
-      display: none;
-    }
-  }
-}
-
 // md responsive
 @include media-md {
   //  home section
@@ -173,7 +37,6 @@
   #about {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 3rem;
     padding-bottom: 2rem;
     // text
     .text {
@@ -228,6 +91,145 @@
       align-items: center;
       justify-content: space-around;
       margin-top: 0rem;
+      font-size: 1rem;
+      .link {
+        margin: 0.8rem;
+      }
+    }
+    .btn {
+      display: none;
+    }
+  }
+}
+
+// lg responsive
+@include media-lg {
+  // header section
+  header {
+    justify-content: space-between;
+    .mobile {
+      display: none;
+    }
+    //nav
+    .nav {
+      display: block;
+      font-size: 1.4rem;
+
+      // items
+      .__items {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5rem;
+        list-style: none;
+        // item
+        .__item {
+          margin: 0 2rem;
+          padding: 0.5rem 1rem;
+          a {
+            text-decoration: none;
+            color: $grayish-blue;
+            &:hover,
+            &:active {
+              color: $dark-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //  home section
+  #home {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0;
+    .img {
+      background-image: url('../../images/bg-intro-desktop.svg');
+      overflow: hidden;
+      .mobile {
+        width: 90%;
+        margin-left: 12rem;
+      }
+    }
+    // text
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        font-size: 6rem;
+      }
+      .info {
+        font-size: 1.8rem;
+        padding-left: 5rem;
+      }
+      // btn
+      .btn {
+        margin-left: 0;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  //  about section
+  #about {
+    flex-direction: column;
+    align-items: flex-start;
+    // text
+    .text {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .title {
+        font-size: 2.8rem;
+      }
+      .info {
+        margin-left: 5rem;
+        font-size: 1.8rem;
+        margin-right: 0;
+      }
+    }
+    // list items
+    .list__items {
+      flex-direction: row;
+    }
+  }
+
+  // article section
+  #article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    // articles list
+    .articles {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+      // single item
+      .__item {
+        .img {
+          height: 15vh;
+        }
+      }
+    }
+  }
+
+  // footer
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+    .links {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 1.5rem;
       font-size: 1rem;
       .link {
         margin: 0.8rem;
