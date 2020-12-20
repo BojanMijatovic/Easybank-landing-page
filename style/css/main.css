@@ -293,7 +293,7 @@ header {
   #about {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; }
+    align-items: center; }
     #about .text {
       display: flex;
       align-items: center;
@@ -312,6 +312,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-between; }
+    #article .title {
+      font-size: 2.8rem; }
     #article .articles {
       flex-direction: row;
       align-items: flex-start;
